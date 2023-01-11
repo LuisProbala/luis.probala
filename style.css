@@ -1,0 +1,1074 @@
+/*   
+Description: LDP portfolio
+Author: Luis Probala
+Author URI: 
+*/
+
+@font-face {
+    font-family: "ApfelGrotezk";
+    src: url("assets/fonts/ApfelGrotezk-Fett.woff2") format("woff2"), url("assets/fonts/ABCOracleTriple-Bold.woff") format("woff"), url("assets/fonts/ABCOracleTriple-Bold.otf") format("opentype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "ApfelGrotezk";
+    src: url("assets/fonts/ApfelGrotezk-Regular.woff2") format("woff2"), url("assets/fonts/ABCOracleTriple-Regular.woff") format("woff"), url("assets/fonts/ABCOracleTriple-Regular.otf") format("opentype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Porpora";
+    src: url("assets/fonts/Porpora-Regular.woff2") format("woff2"), url("assets/fonts/ABCOracleTriple-Bold.woff") format("woff"), url("assets/fonts/ABCOracleTriple-Bold.otf") format("opentype");
+    font-weight: normal;
+}
+
+/* @font-face {
+    font-family: "ApfelGrotezk";
+    src: url("assets/fonts/ApfelGrotezk-Regular.woff2") format("woff2"), url("assets/fonts/ABCOracleTriple-Regular.woff") format("woff"), url("assets/fonts/ABCOracleTriple-Regular.otf") format("opentype");
+    font-weight: normal;
+}
+
+ */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+  /*   vertical-align: baseline; */
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* RESET END */
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    font-weight: bold;
+    background: white;
+    color: white;
+    margin: 0;
+    font-size: 10vw;
+    line-height: 8vw;
+    overflow-x: hidden;
+}
+
+.clear {
+    clear: both;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 31px;
+}
+
+h4 {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+p {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 21.6px;
+    padding-top:2px;
+}
+
+.imprint ul li {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    list-style-type: disclosure-closed;
+}
+
+figcaption,
+.facts,
+.list {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+img,
+video {
+    width: 100%;
+    height: auto;
+}
+
+.transistion {
+    -webkit-transition: all 300ms linear;
+    -moz-transition: all 300ms linear;
+    -ms-transition: all 300ms linear;
+    -o-transition: all 300ms linear;
+    transition: all 300ms linear;
+}
+
+
+/* MAIN */
+
+.footerbox {
+}
+
+header,
+main,
+footer {
+    margin: 10px;
+    margin-bottom: 0;
+    width: calc(100vw - 40px);
+
+}
+
+footer {
+	padding-bottom: 10vh
+}
+
+header,
+.projectlist li,
+footer,
+.headerback {
+    position: relative;
+    width: calc(100vw - 40px);
+    /* padding-top: 1vw; */
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+    white-space:;
+    width: 70vw;
+    align-self: center;
+}
+
+/* .footerbox {
+	width:;
+	display: flex;
+	flex-direction: column;
+	align-items: center
+} */
+.projectlist {
+    font-family: "ApfelGrotezk", sans-serif;
+    font-weight: bold;
+}
+
+.projectlist li{
+	background: black
+
+}
+header {
+    background:;
+	color: black;
+}
+
+header h1 {
+	font-family: Porpora;
+	border: 3px solid black;
+	padding: 1vw;
+	color: black
+}
+
+.introtext h4 {
+	font-family: 'Inconsolata', monospace;
+	text-align: left;
+}
+
+.single header {
+    padding-top:0;
+}
+
+.single section {
+    margin-bottom:0;
+}
+
+.single main {
+    margin-bottom:20px;
+}
+
+.projectlist li a {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+.white {
+    background: white;
+    color: black;
+}
+
+.white:hover {
+    background: none;
+    color: white;
+}
+
+
+/* HEADER */
+
+
+.namecontainer {
+	display:flex;
+	flex-direction:row;
+	align-items:end;
+	cursor:default;
+}
+
+
+header nav {
+    display: none;
+}
+
+header:hover {
+    background: none;
+}
+
+header:hover h1 {
+    display: none;
+}
+
+header:hover nav {
+    display: block;
+}
+
+nav a {
+    color: black;
+    cursor:;
+}
+
+nav a:nth-child(1) {
+    float: left;
+}
+
+nav a:nth-child(2) {
+    float: right;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: none;
+}
+
+.home footer a.button,
+.category footer a.button,
+.error404 footer a.button {
+    visibility: hidden;
+    content-visibility: hidden;
+    display: none;
+}
+
+
+/* PROJECTLIST */
+
+h2:nth-child(2) {
+    position: absolute;
+    top: 1vw;
+    left: 100vw;
+    width: 100vw;
+}
+
+.projectlist li:nth-child(even) h2:nth-child(2) {
+    right: 100vw;
+}
+
+.projectlist li:hover {
+    background: none;
+    cursor: pointer;
+    z-index: 9999999;
+}
+
+li:hover h2,
+.button:hover h2,
+.headerback:hover h2 {
+    
+    animation-name: move;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.projectlist li:nth-child(even):hover h2 {
+    animation-direction: reverse;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0vw);
+    }
+    to {
+        transform: translateX(calc(-100vw - 20px));
+    }
+}
+
+.projectlist li:hover h2 {
+    color: black;
+}
+
+.projectlist li figure {
+    width: calc(50vw - 20px);
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+}
+
+.projectlist li figure video {
+    width: 100%;
+    height: auto;
+}
+
+.projectlist li:hover figure {
+    opacity: 1;
+}
+
+.projectlist li:hover figure:hover {
+    display: none;
+}
+
+
+/* SINGLE */
+
+.page,
+.single {
+    background: black;
+    color: white;
+}
+
+.page header,
+.single header {
+    background: none;
+    cursor: inherit;
+}
+
+.page .headerback,
+.single .headerback {
+    background: white;
+	
+}
+
+.page .headerback h2,
+.single .headerback h2 {
+    color: black;
+}
+
+.page header:hover .headerback,
+.single header:hover .headerback {
+    background: none;
+}
+
+.page header:hover .headerback h2,
+.single header:hover .headerback h2 {
+    color: white;
+}
+
+.page nav a,
+.single nav a {
+    color: white
+}
+
+.heromedia {
+    width: calc(100vw - 40px);
+    height: auto;
+    margin-bottom: 20px;
+    line-height: 0;
+}
+
+section,
+section figure {
+    display: block;
+    margin-bottom: 20px;
+    line-height: 0;
+}
+
+figure {
+    position: relative;
+    overflow: hidden;
+}
+
+figure figcaption {
+    background: black;
+    color: White;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    width: calc(100% - 10px);
+    padding: 5px;
+    line-height: 21px;
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+figure figcaption p {
+    margin-bottom:0;
+}
+
+figure figcaption p:before {
+    content: "Â© "
+}
+
+figure:hover figcaption {
+    -moz-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.col-2 figure,
+.col-3 figure,
+.col-4 figure,
+.col-2 article,
+.col-3 article,
+.col-4 article {
+    height: auto;
+    margin-right: 20px;
+    float: left;
+}
+
+.col-2 figure,
+.col-2 article {
+    width: calc((100vw - 60px) / 2);
+}
+
+.col-3 figure,
+.col-3 article {
+    width: calc((100vw - 80px) / 3);
+}
+
+.col-4 figure,
+.col-4 article {
+    width: calc((100vw - 100px) / 4);
+}
+
+.col-2 figure:last-of-type,
+.col-3 figure:last-of-type,
+.col-4 figure:last-of-type,
+.col-2 article:last-of-type,
+.col-3 article:last-of-type,
+.col-4 article:last-of-type {
+    margin-right: 0;
+}
+
+.col-2 figure:last-of-type:after,
+.col-3 figure:last-of-type:after,
+.col-4 figure:last-of-type:after,
+.col-2 article:last-of-type:after,
+.col-3 article:last-of-type:after,
+.col-4 article:last-of-type:after {
+    clear: both;
+}
+
+ul.facts {
+    margin-bottom: 20px;
+}
+
+ul.facts li:before {
+    content: "â†’ "
+}
+
+ul.facts .cat span:not(:last-child):after {
+    content: ", ";
+}
+
+ul.facts .work span:not(:last-child):after {
+    content: " x ";
+}
+
+ul.facts .tog span:not(:last-child):after {
+    content: "; ";
+}
+
+article.two-column {
+    columns: 2;
+    column-gap: 20px;
+}
+
+.space-50 {
+    height: 50px;
+}
+
+.space-100 {
+    height: 100px;
+}
+
+.space-200 {
+    height: 200px;
+}
+
+
+/* PAGE */
+
+.pagefooter {
+    margin-top: 200px;
+}
+
+.pagefooter article:last-child {
+    text-align: right;
+}
+
+.list.dot li {
+    float: left;
+}
+
+.list.dot li:after {
+    content: ",\0000a0";
+}
+
+.list.dot li:nth-last-of-type(1):after,
+.list.dot li:nth-last-of-type(2):after {
+    content: "\0000a0";
+}
+
+.list.break li {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.list li a {
+    -webkit-transition: color 500ms ease-out;
+    -moz-transition: color 500ms ease-out;
+    -ms-transition: color 500ms ease-out;
+    -o-transition: color 500ms ease-out;
+    transition: color 500ms ease-out;
+}
+
+.list li:hover a,
+.list li.hover a {
+    color:grey;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+.list li:hover a.buzz.more {
+    color:white;
+}
+
+.listaddmore .list li {
+    display:none;
+}
+
+.listaddmore .list li:nth-child(-n+15) {
+    display:block;
+}
+
+.listaddmore .list.dot li:nth-child(15):after {
+    content: "\0000a0";
+}
+
+.listaddmore .list li:last-child {
+    display:block;
+}
+
+.listaddmore.expand .list li {
+    display:block;
+}
+
+.listaddmore.expand .list.dot li:nth-child(15):after {
+    content: ",\0000a0";
+}
+
+
+
+
+
+a.more:before {
+    content: "â†’ "
+}
+
+article p:last-of-type {
+    margin-bottom: 0;
+}
+
+.slider {
+    cursor: ew-resize;
+}
+
+
+
+/* -- COOKIE END **/
+
+.mobilonly {
+    display:none;
+}
+
+/* MOBIL */
+
+@media screen and (max-width: 700px) {
+
+
+.btngrid {
+	align-self: end;
+	display: flex;
+	gap: 10px;
+}
+
+#myBtnContainer {
+	flex-direction: column;
+	align-items: center	
+}
+
+	header,
+    main,
+    footer {
+        margin: 10px;
+		margin-left:;
+		margin-right:;
+    }
+    header,
+    main,
+    footer,
+    .projectlist li,
+    .headerback,
+    .heromedia {
+        width: calc(100vw - 40px);
+        margin-bottom: 5px;
+    }
+	
+	.projectlist li{
+	padding-top: 8px;
+	padding-bottom: 8px;
+	
+	}
+	
+	
+    .mobilonly {
+        display:block;
+    }
+    
+
+    h3 {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .projectlist figure,
+    h2:nth-child(2) {
+        display: none;
+        content-visibility: hidden;
+    }
+    .projectlist li:hover {
+        background: black;
+    }
+	
+	
+    li:hover h2,
+    .button:hover h2,
+    .headerback:hover h2 {
+        animation: none;
+    }
+    .projectlist li:hover h2 {
+        color: inherit;
+    }
+    .page header:hover .headerback,
+    .single header:hover .headerback,
+    .white:hover {
+        background: white;
+    }
+    .page header:hover .headerback h2,
+    .single header:hover .headerback h2,
+    .white:hover {
+        color: black;
+    }
+    article.two-column {
+        columns: 1;
+    }
+    .page section {
+        margin-bottom: 0;
+    }
+    .page section article,
+    .page section figure {
+        margin-bottom: 20px;
+    }
+    .col-2 figure,
+    .col-3 figure,
+    .col-4 figure,
+    .col-2 article,
+    .col-3 article,
+    .col-4 article {
+        margin-right: 0;
+        float: none;
+        width: calc(100vw - 40px);
+        display: inline-block;
+    }
+    .pagefooter article:last-child {
+        text-align: left;
+        margin-bottom: 0;
+    }
+    figure figcaption {
+        display: block;
+        position: relative;
+        font-size: 13px;
+        line-height: 14px;
+        -moz-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -o-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+    figure.contact {
+        margin-bottom: 200px !important;
+    }
+    .slider {
+        cursor: default;
+    }
+    .sliderholder {
+        width: 100% !important;
+        -moz-transform: translateX(0) !important;
+        -webkit-transform: translateX(0) !important;
+        -o-transform: translateX(0) !important;
+        -ms-transform: translateX(0) !important;
+        transform: translateX(0) !important;
+    }
+
+    #nycteroy h2 {
+        font-size: 22vw;
+        }
+
+    #arbo h2 {
+        font-size: 11vw;
+        }
+
+    #wood h2 {
+        font-size: 19vw;
+        }
+
+    #cieps h2 {
+        font-size: 14vw;
+        }
+    
+    #apto h2 {
+        font-size: 21.3vw;
+        }
+
+    #language h2 {
+        font-size: 9vw;
+        }     
+    
+    #ocio h2 {
+        font-size: 9.4vw;
+        }
+		
+    #voronoi h2 {
+        font-size: 13vw;
+        }
+		
+		header:hover h1 {
+    display: block;
+}
+
+header:hover nav {
+    display: block;
+}
+}
+
+@media screen and (max-width: 400px) {
+ 
+ .btngrid {
+	align-self: end;
+	display: flex;
+	gap: 10px;
+}
+
+
+#myBtnContainer {
+	flex-direction: column;
+	align-items: center
+}
+
+    header,
+    main,
+    footer {
+        margin: 7px;
+    }
+    header,
+    main,
+    footer,
+    .projectlist li,
+    .headerback,
+    .heromedia {
+        width: calc(100vw - 20px);
+        margin-bottom: 5px;
+    }
+    section,
+    section figure,
+    ul.facts,
+    .page section article,
+    .page section figure,
+    p {
+        margin-bottom: 10px;
+    }
+    .col-2 figure,
+    .col-3 figure,
+    .col-4 figure,
+    .col-2 article,
+    .col-3 article,
+    .col-4 article {
+        width: calc(100vw - 20px);
+    }
+}
+
+
+@media screen and (min-width: 1600px) {
+    p, h4, figcaption, .facts, .list, .imprint ul li  {
+        font-size: 24px;
+        line-height: 27px;
+    }
+
+    h3 {
+        font-size: 38px;
+        line-height: 42px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    p, h4, figcaption, .facts, .list, .imprint ul li  {
+        font-size: 27px;
+        line-height: 31px;
+    }
+
+    h3 {
+        font-size: 45px;
+        line-height: 52px;
+    }
+}
+
+.container {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filterDiv {
+  float: left;
+  background-color: #2196F3;
+  color: #fffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */ 
+.btngrid {
+	align-self: end;
+	display: flex;
+    flex-direction: row;
+	gap: 10px;
+}
+
+.btnflex1 {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    font-size: ;
+}
+
+.btnflex2 {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.btnflex3 {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.btn {
+	width:;
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  cursor: pointer;
+  font-family: "ApfelGrotezk", sans-serif;
+font-weight: bold;
+color: white;
+font-size:;
+line-height:;
+}
+
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+.btn.photogrammetry {
+	background-color: #2C2C42;
+}
+.btn.photography {
+	background-color: #5C445C 
+}
+.btn.education {
+	background-color: #33542B
+}
+.btn.research {
+	background: #A49B3D;
+}
+.btn.craft {
+	background-color: #854B37
+}
+ 
